@@ -3,12 +3,12 @@ import { Grid } from '@material-ui/core';
 import Product from './Product/Product';
 import useStyle from './styles';
 
-const products=[
-    {id:1,name:'Shoes',description:'Running Shoes',price:'$5',image:'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'},
-    {id:2,name:'Macbook',description:'Apple Macbook',price:'$15',image:'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'}
-];
+// const products=[
+//     {id:1,name:'Shoes',description:'Running Shoes',price:'$5',image:'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'},
+//     {id:2,name:'Macbook',description:'Apple Macbook',price:'$15',image:'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'}
+// ];
 
-const Products=()=>{
+const Products=({products})=>{
     const classes=useStyle();
     return(
         <main className={classes.content}>

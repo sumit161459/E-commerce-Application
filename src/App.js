@@ -19,7 +19,7 @@ function App() {
     return (
         <div>
             <Navbar></Navbar>
-           <Products></Products>
+           <Products products={products}></Products>
         </div>
     )
 }
